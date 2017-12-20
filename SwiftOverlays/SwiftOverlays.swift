@@ -409,8 +409,7 @@ open class SwiftOverlays: NSObject {
         
         // TODO: use autolayout instead
         // Ugly, but works
-        let topHeight = UIApplication.shared.statusBarFrame.size.height
-            + UINavigationController().navigationBar.frame.height
+        let topHeight = notificationView.frame.size.height
         
         let height = max(topHeight, 64)
         let width = UIScreen.main.bounds.width
